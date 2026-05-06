@@ -1,17 +1,7 @@
-@font-face {
-  font-family: "Gmarket Sans";
-  src: url("../fonts/GmarketSansTTFMedium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: "Gmarket Sans";
-  src: url("../fonts/GmarketSansTTFBold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
+ /* =========================
+   PRETENDARD */
+   
 @font-face {
   font-family: "Pretendard";
   src: url("../fonts/Pretendard-Light.woff2") format("woff2");
@@ -39,3 +29,22 @@
   font-weight: 700;
   font-style: normal;
 }
+
+
+ /* =========================
+   GMARKET SANS */
+
+@font-face {
+  font-family: "Gmarket Sans";
+  src: url("../fonts/GmarketSansMedium.woff2") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gmarket Sans";
+  src: url("../fonts/GmarketSansBold.woff2") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
