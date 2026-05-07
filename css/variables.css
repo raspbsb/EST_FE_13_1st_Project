@@ -1,9 +1,7 @@
-
- /* =========================
+/* =========================
    MATERIAL ICONS */
 
-:root {  
-
+:root {
   /* =========================
    COLORS
   ========================= */
@@ -148,6 +146,8 @@
   --body-l: 500 18px/32px var(--font-pretendard);
 
   --body-m: 400 16px/27px var(--font-pretendard);
+
+  --body-m-plus-400: 400 16px/27px var(--font-pretendard);
 
   --caption-m: 500 12px/27px var(--font-pretendard);
 
