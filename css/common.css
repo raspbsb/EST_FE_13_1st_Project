@@ -156,3 +156,8 @@
   align-items: center;
   border-radius: 20px;
 }
+
+/* top 이동시 스크롤 부드럽게 */
+html {
+  scroll-behavior: smooth;
+}
