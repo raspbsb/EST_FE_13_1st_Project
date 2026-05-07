@@ -377,7 +377,7 @@ h3 {
     max-width: 588px;
 }
 
-/* 🟢 [새소식] 제목 스타일 (36px / LH 64) */
+/*  [새소식] 제목 스타일 (36px / LH 64) */
 .heading-l {
     font-family: 'Pretendard', sans-serif;
     font-size: 36px;
@@ -408,13 +408,13 @@ h3 {
 
 .news-link-group {
     display: flex;
-    /* 🔵 이미지와 글씨 상단 맞춤 정렬 */
+    /*  이미지와 글씨 상단 맞춤 정렬 */
     align-items: flex-start; 
     gap: 24px; /* 이미지와 텍스트 간격 24 */
     text-decoration: none;
 }
 
-/* 🖼️ 이미지 규격 (126x96 / R 16) */
+/*  이미지 규격 (126x96 / R 16) */
 .news-thumb-box {
     width: 126px;
     height: 96px;
@@ -436,7 +436,7 @@ h3 {
     gap: 4px;
 }
 
-/* 🏷️ 라벨 (Inter Medium 12 / Crimson) */
+/*  라벨 (Inter Medium 12 / Crimson) */
 .news-label {
     font-family: 'Inter', sans-serif;
     font-size: 12px;
@@ -445,7 +445,7 @@ h3 {
     color: #DC143C;
 }
 
-/* 📘 제목 (Pretendard Medium 16 / LH 27 / Primary) */
+/*  제목 (Pretendard Medium 16 / LH 27 / Primary) */
 .news-title {
     font-family: 'Pretendard', sans-serif;
     font-size: 16px;
@@ -454,7 +454,7 @@ h3 {
     color: var(--primary); /* Brand/Primary */
 }
 
-/* 🕒 날짜 (Inter Medium 12 / Medium Gray) */
+/*  날짜 (Inter Medium 12 / Medium Gray) */
 .news-date {
     font-family: 'Inter', sans-serif;
     font-size: 12px;
