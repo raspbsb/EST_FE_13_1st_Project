@@ -295,6 +295,7 @@ h3 {
   font: var(--caption-m);
   color: var(--main-black);
   line-height: var(--line-height-27);
+}
 /* =========================
   Accordion (Checkbox) - 배정호 작업 */
 
@@ -362,7 +363,6 @@ h3 {
 .accordion-input:checked + .accordion-question span {
   transform: rotate(180deg);
   color: var(--title-black);
-  
 }
 
 .accordion-input:checked + .accordion-question p {
