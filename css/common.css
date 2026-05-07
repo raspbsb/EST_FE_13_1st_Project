@@ -113,13 +113,14 @@
 .accordion-input:checked + .accordion-question span {
   transform: rotate(180deg);
   color: var(--title-black);
+  
 }
 
 .accordion-input:checked + .accordion-question p {
   font: var(--body-m-plus-500);
 }
 
-/* 히든 클래스 추가 - 배정호 작업 */
+/* hidden 클래스 추가 - 배정호 작업 */
 
 .visually-hidden {
   position: absolute;
