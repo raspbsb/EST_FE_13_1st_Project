@@ -46,6 +46,75 @@
   font-style: normal;
 }
 
+/* 네비 컴포넌트 -최예빈 작업 */
+
+
+/* 네비게이션 그룹 (ul + 버튼) */
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;                 /* 메뉴와 우측 버튼 사이 간격 */
+}
+
+/* 메뉴 리스트 (ul) */
+header nav ul {
+    display: flex;
+    gap: 24px;                 /* 메뉴 아이템 간의 간격 */
+}
+
+
+/*  네비폰트 흰색 -> 가상배경설정 */
+.container{
+  background-color: var(--secondary);
+  width: 1920px;
+  height: 96px;
+}
+
+.nav-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--label-m-500);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white-alpha-70);
+    padding: 8px 0;
+    margin: 0;
+    transition: all 0.2s ease;
+}
+
+/* .nav-item 상태: hover */
+.nav-item:hover a {
+    font-family: var(--label-m-700);
+    color: var(--white);
+    padding-bottom: 3px;
+    box-shadow: 0 3px 0 0 var(--white); /* 밑줄효과 border-bottom은 inside처럼 나타남 */
+}
+
+/* cta버튼  */
+
+.cta-btn-sub {
+    
+    padding: 10px 20px;        
+    border-radius: var(--radius-s-plus);
+    
+    
+    background-color: var(--white) ;
+    color: var(--primary);           
+    
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 0.2s ease;
+}
+
+.cta-btn-sub:hover {
+  background-color: var(--white-hover);
+}
 /*  buttom compnents-이민호 작성 */
 /* =========================
   Button Base Component
@@ -122,7 +191,7 @@
   font-size: 48px;
   line-height: 100%;
 }
-  
+
   
 /* 기본 카드 컴포넌트 - 김해나 작업 */
 .heading-m {
@@ -455,17 +524,6 @@ h3 {
     max-width: 588px;
 }
 
-/* [새소식] 제목 스타일 (36px / LH 64) */
-.heading-l {
-    font-family: 'Pretendard', sans-serif;
-    font-size: 36px;
-    line-height: 64px;
-    font-weight: 700;
-    color: var(--title-black);
-    margin-bottom: 40px;
-}
-
-/*  뉴스 리스트 컨테이너 */
 .news-list {
     padding: 0 16px;
     list-style: none;
@@ -500,11 +558,10 @@ h3 {
     text-decoration: none;
 }
 
-/* 이미지 규격 (126x96 / R 16) */
 .news-thumbnail {
     width: 126px;
     height: 96px;
-    border-radius: 16px;
+    border-radius: var(--radius-m);
     overflow: hidden;
     flex-shrink: 0;
     object-fit: cover; /* 이미지 비율 유지 */
@@ -523,28 +580,24 @@ h3 {
     font-size: 12px;
     font-weight: 500;
     line-height: 12px;
-    color: #DC143C;
+    color: var(--crimson);
     margin-bottom: 4px;
 }
 
-/* 제목 (Pretendard Medium 16 / LH 27 / Primary) */
 .news-title {
-    font-family: 'Pretendard', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 27px;
+    font: var(--body-m-plus-500);
     color: var(--primary);
     /* 호버 시 밑줄 애니메이션을 위해 유지 */
     transition: text-decoration 0.2s ease;
 }
 
-/* 날짜 (Inter Medium 12 / Medium Gray) */
+
 .news-date {
     font-family: 'Inter', sans-serif;
     font-size: 12px;
     font-weight: 500;
     line-height: 12px;
-    color: var(--medium-gray); /* Neutral/Medium Gray */
+    color: var(--medium-gray);
 }
 /* hidden 클래스 추가 - 배정호 작업 */
 
