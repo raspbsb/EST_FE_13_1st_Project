@@ -311,16 +311,15 @@ header .btn:active {
 전환 보조 자료 그룹 스타일 - 배정호
 ======================= */
 
+/* 후기 섹션 */
+
 .conversion-support-group > section {
   display: flex;
   flex-direction: column;
 }
 
-.testimonial-section .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 64px;
+.testimonial-section .testimonial-list {
+  height: 100%;
 }
 
 .testimonial-section .section-header {
@@ -336,11 +335,113 @@ header .btn:active {
 .testimonial-section .testimonial-list {
   display: flex;
   gap: 24px;
+  margin-bottom: 32px;
 }
 
 .testimonial-section .testimonial-item {
   flex: 1 1 0;
 }
+
+.testimonial-section {
+  margin-bottom: 96px;
+}
+
+/* 지원자격 섹션 */
+
+.requirements-intro {
+  margin-right: 24px;
+}
+
+.requirements-section .requirements-summary-list {
+  width: 100%;
+}
+
+.requirements-summary-item span {
+  padding: 4px;
+  font-size: 24px;
+  border-radius: 50px;
+  color: var(--primary);
+  background: var(--primary-alpha-10);
+  text-align: center;
+}
+
+.requirements-card.card {
+  padding: 40px 30px;
+  justify-content: center;
+}
+
+.requirements-card-layout h3 {
+  font: var(--heading-s);
+}
+.requirements-card-layout p {
+  font: var(--body-m-plus-400);
+}
+.requirements-card li {
+  font: var(--caption-m);
+}
+
+/* FAQ 섹션 */
+
+.faq-news-section h2 {
+  font: var(--heading-l);
+  color: var(--title-black);
+  width: 100%;
+}
+
+.faq-section {
+  align-items: start;
+}
+
+/* News 섹션 */
+
+.news-section {
+  align-items: start;
+}
+
+.news-section h2 {
+  padding-left: 16px;
+}
+
+.news-section .news-list {
+  padding-left: 32px;
+}
+
+.news-list img {
+  border-radius: 16px;
+}
+
+.news-item {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--medium-gray-30);
+}
+
+
+.news-item .news-link {
+  gap: 24px;
+}
+.news-item .news-category {
+  color: var(--crimson);
+}
+.news-item .news-title {
+  color: var(--primary);
+}
+.news-item .news-date {
+  color: var(--medium-gray);
+}
+
+.news-content {
+  gap: 4px;
+}
+
+.news-item:first-of-type {
+  padding-top: 0;
+}
+
+.news-item:last-of-type {
+  border: none;
+}
+
+
 
 /* =======================
 전환 보조 자료 그룹 종료 
