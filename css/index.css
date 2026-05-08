@@ -1,61 +1,28 @@
-/* header작성 - 이민호 작성 */
+/* =======================
+header작성 - 이민호 작성
+
 header {
   width: 100%;
   background: var(--secondary);
 }
 
-header .container {
-  max-width: 1200px;
-  height: 64px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+header .container { height: 64px; margin: 0 auto; justify-content: space-between; align-items: center; }
 
-/* =========================
-  LOGO */
+/* LOGO */
 
-header h1 a {
-  display: flex;
-  align-items: center;
-}
+.logo img { display: block; height: 24px; }
 
-header h1 img {
-  display: block;
-  width: 124px;
-}
+/* NAVIGATION */
+nav .list { gap: 24px; }
 
-/* =========================
-  NAV */
+/* NAV */
 
-header nav {
-  display: flex;
-  align-items: center;
-  gap: 56px;
-}
+nav a:hover { color: var(--white); }
 
-header nav ul {
-  display: flex;
-  gap: 32px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+/* CTA BUTTON */
+header .btn { height: 40px; box-shadow: var(--button-shadow); transition: 0.2s ease; }
 
-header .nav-item a {
-  font: var(--caption-m);
-  color: var(--white);
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-header .nav-item a:hover {
-  color: var(--white-alpha-70);
-}
-
-/* =========================
-  CTA BUTTON */
+/* CTA BUTTON */
 
 header .cta-btn-sub {
   padding: 12px 24px;
@@ -67,15 +34,10 @@ header .cta-btn-sub {
   transition: 0.3s;
 }
 
-header .cta-btn-sub:hover {
-  background: var(--white-hover);
-}
+header .btn:active { background: var(--primary-active); }
 
-header .cta-btn-sub:active {
-  background: var(--white-active);
-}
-
-/* 전환 보조 자료 그룹 스타일 - 배정호 */
+/* =======================
+전환 보조 자료 그룹 스타일 - 배정호
 
 .conversion-support-group > section {
   display: flex;
@@ -108,28 +70,14 @@ header .cta-btn-sub:active {
   flex: 1 1 0;
 }
 
-/* 고정 버튼 스타일 - 배정호 작업 */
+/* =======================
+전환 보조 자료 그룹 종료 
+======================= */
 
-.fixed-text {
-  color: var(--white);
-}
+/* =======================
+footer css작성 - 이민호 작성
+======================= */
 
-.contact-us-button {
-  background: var(--secondary);
-}
-
-.contact-us-button a {
-  font-size: 48px;
-}
-
-.top-button {
-  background: var(--button-container);
-}
-
-.top-button a {
-  font-size: 48px;
-}
-/* footer css작성 - 이민호 작성 */
 footer {
   width: 100%;
   background: var(--super-light-gray);
@@ -147,9 +95,7 @@ footer .container {
   margin: 0 auto;
 }
 
-/* =========================
-  FOOTER TOP
-========================= */
+/* FOOTER TOP */
 
 .footer-top {
   display: flex;
@@ -158,9 +104,7 @@ footer .container {
   gap: 80px;
 }
 
-/* =========================
-  BRAND
-========================= */
+/* BRAND */
 
 .footer-brand {
   display: flex;
@@ -207,8 +151,7 @@ footer .container {
   color: var(--primary);
 }
 
-/* =========================
-  NAV */
+/* NAV */
 
 .footer-nav-program,
 .footer-nav-company,
@@ -262,8 +205,7 @@ footer .container {
   color: var(--dark-gray);
 }
 
-/* =========================
-  LINE */
+/* LINE */
 
 footer hr {
   width: 100%;
@@ -273,8 +215,7 @@ footer hr {
   margin: 56px 0 32px;
 }
 
-/* =========================
-  FOOTER BOTTOM */
+/* FOOTER BOTTOM */
 
 .footer-bottom {
   display: flex;
@@ -305,4 +246,39 @@ footer hr {
 /* 임시 크기 조정 */
 img {
   max-width: 400px;
-} /* hero-section 최예빈 작업 */
+}
+/* =======================
+푸터 종료
+======================= */
+
+/* =======================
+hero-section 최예빈 작업
+======================= */
+
+/* =======================
+고정 버튼 스타일 - 배정호 작업
+======================= */
+
+.fixed-text {
+  color: var(--white);
+}
+
+.contact-us-button {
+  background: var(--secondary);
+}
+
+.contact-us-button a {
+  font-size: 48px;
+}
+
+.top-button {
+  background: var(--button-container);
+}
+
+.top-button a {
+  font-size: 48px;
+}
+
+/* =======================
+고정 버튼 종료
+======================= */
