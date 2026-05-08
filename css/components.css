@@ -193,7 +193,7 @@ header nav ul {
 
   background: var(--white);
 
-  gap: var(--line-height-27);
+  gap: 20px;
 }
 
 /* 카드 크기 배치 (부모에게 flex 필요) */
@@ -261,7 +261,6 @@ header nav ul {
 /* =======================
 이미지 카드 - 오예은 작업
 ======================= */
-
 
 .image-card-big {
   display: inline-flex;
@@ -436,8 +435,6 @@ header nav ul {
 Accordion (Checkbox) - 배정호 작업
 ======================= */
 
-
-
 .accordion {
   width: 486px;
   height: auto;
@@ -521,7 +518,6 @@ Accordion (Checkbox) - 배정호 작업
 /* =======================
 고정버튼 - 배정호 작업
 ======================= */
-
 
 .fixed-ui {
   position: fixed;
