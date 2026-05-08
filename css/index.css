@@ -536,13 +536,16 @@ header .btn:active {
   transition: background 0.1s ease;
 }
 
-/* 메인 버튼 (흰색) */
 .cta-btn-main {
   background-color: var(--white);
   color: var(--primary);
 }
-
-/* 서브 버튼 (세컨더리) */
+.cta-btn-main:hover {
+    background-color: var(--white-hover);
+}
+.cta-btn-main:active {
+    background-color: var(--white-active);
+}
 .btn-sub {
   background-color: var(--secondary);
   color: var(--white);
@@ -560,7 +563,6 @@ header .btn:active {
 
 /* =======================
 최종 CTA 섹션 종료
-======================= */
 
 /* #endregion */
 
