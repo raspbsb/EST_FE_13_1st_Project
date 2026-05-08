@@ -44,7 +44,9 @@
   font-style: normal;
 }
 
-/* 전체 레이아웃 스타일 */
+/* =======================
+전체 레이아웃 스타일
+======================= */
 
 /* 전체 flex - 배정호 */
 
@@ -68,14 +70,10 @@ section {
   max-width: 1200px;
 }
 
-/* 전체 스타일 */
-
 /* top 이동시 스크롤 부드럽게 - 배정호 */
 html {
   scroll-behavior: smooth;
 }
-
-/* main 공통 스타일 */
 
 /* 섹션그룹 간 갭/패딩 - 배정호 */
 
@@ -86,9 +84,9 @@ html {
   padding: 96px 0;
 }
 
-/* 공통 클래스 */
-
-/* 레이아웃 공통 클래스 */
+/* =======================
+공통 유틸리티 클래스
+======================= */
 
 /* flex utility 추가 (vertical, horizontal, jcc, jcsb, acc) - 배정호 */
 
@@ -116,8 +114,8 @@ html {
 
 .ellipsis {
   overflow: hidden;
-  white-space: nowrap;      /* 줄바꿈 금지 */
-  text-overflow: ellipsis;  /* ... 표시 */
+  white-space: nowrap; /* 줄바꿈 금지 */
+  text-overflow: ellipsis; /* ... 표시 */
 }
 
 /* visually-hidden 클래스 추가 - 배정호 */
