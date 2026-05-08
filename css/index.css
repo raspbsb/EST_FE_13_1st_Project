@@ -1,31 +1,43 @@
-/* header작성 - 이민호 작성 */
-/* header작성 - 이민호 작성 */
-header { width: 100%; background: var(--secondary); }
+/* =======================
+header작성 - 이민호 작성
+
+header {
+  width: 100%;
+  background: var(--secondary);
+}
 
 header .container { height: 64px; margin: 0 auto; justify-content: space-between; align-items: center; }
 
 /* LOGO */
-.logo a { display: inline-flex; align-items: center; }
 
 .logo img { display: block; height: 24px; }
 
 /* NAVIGATION */
 nav .list { gap: 24px; }
 
-nav a {display: inline-flex; align-items: center; padding: 8px 0; font: var(--caption-m);
-  color: var(--white-alpha-70); text-decoration: none; transition: 0.2s ease;}
+/* NAV */
 
 nav a:hover { color: var(--white); }
 
 /* CTA BUTTON */
 header .btn { height: 40px; box-shadow: var(--button-shadow); transition: 0.2s ease; }
 
-header .btn:hover { background: var(--primary-hover); }
+/* CTA BUTTON */
+
+header .cta-btn-sub {
+  padding: 12px 24px;
+  border-radius: var(--radius-s-plus);
+  background: var(--white);
+  font: var(--caption-m);
+  color: var(--primary);
+  text-decoration: none;
+  transition: 0.3s;
+}
 
 header .btn:active { background: var(--primary-active); }
 
-/* header작성-완료-*/
-/* 전환 보조 자료 그룹 스타일 - 배정호 */
+/* =======================
+전환 보조 자료 그룹 스타일 - 배정호
 
 .conversion-support-group > section {
   display: flex;
@@ -58,28 +70,14 @@ header .btn:active { background: var(--primary-active); }
   flex: 1 1 0;
 }
 
-/* 고정 버튼 스타일 - 배정호 작업 */
+/* =======================
+전환 보조 자료 그룹 종료 
+======================= */
 
-.fixed-text {
-  color: var(--white);
-}
+/* =======================
+footer css작성 - 이민호 작성
+======================= */
 
-.contact-us-button {
-  background: var(--secondary);
-}
-
-.contact-us-button a {
-  font-size: 48px;
-}
-
-.top-button {
-  background: var(--button-container);
-}
-
-.top-button a {
-  font-size: 48px;
-}
-/* footer css작성 - 이민호 작성 */
 footer {
   width: 100%;
   background: var(--super-light-gray);
@@ -97,9 +95,7 @@ footer .container {
   margin: 0 auto;
 }
 
-/* =========================
-  FOOTER TOP
-========================= */
+/* FOOTER TOP */
 
 .footer-top {
   display: flex;
@@ -108,9 +104,7 @@ footer .container {
   gap: 80px;
 }
 
-/* =========================
-  BRAND
-========================= */
+/* BRAND */
 
 .footer-brand {
   display: flex;
@@ -157,8 +151,7 @@ footer .container {
   color: var(--primary);
 }
 
-/* =========================
-  NAV */
+/* NAV */
 
 .footer-nav-program,
 .footer-nav-company,
@@ -212,8 +205,7 @@ footer .container {
   color: var(--dark-gray);
 }
 
-/* =========================
-  LINE */
+/* LINE */
 
 footer hr {
   width: 100%;
@@ -223,8 +215,7 @@ footer hr {
   margin: 56px 0 32px;
 }
 
-/* =========================
-  FOOTER BOTTOM */
+/* FOOTER BOTTOM */
 
 .footer-bottom {
   display: flex;
@@ -255,4 +246,39 @@ footer hr {
 /* 임시 크기 조정 */
 img {
   max-width: 400px;
-} /* hero-section 최예빈 작업 */
+}
+/* =======================
+푸터 종료
+======================= */
+
+/* =======================
+hero-section 최예빈 작업
+======================= */
+
+/* =======================
+고정 버튼 스타일 - 배정호 작업
+======================= */
+
+.fixed-text {
+  color: var(--white);
+}
+
+.contact-us-button {
+  background: var(--secondary);
+}
+
+.contact-us-button a {
+  font-size: 48px;
+}
+
+.top-button {
+  background: var(--button-container);
+}
+
+.top-button a {
+  font-size: 48px;
+}
+
+/* =======================
+고정 버튼 종료
+======================= */
