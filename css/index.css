@@ -1,61 +1,28 @@
-/* header작성 - 이민호 작성 */
+/* =======================
+header작성 - 이민호 작성
+
 header {
   width: 100%;
   background: var(--secondary);
 }
 
-header .container {
-  max-width: 1200px;
-  height: 64px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+header .container { height: 64px; margin: 0 auto; justify-content: space-between; align-items: center; }
 
-/* =========================
-  LOGO
+/* LOGO */
 
-header h1 a {
-  display: flex;
-  align-items: center;
-}
+.logo img { display: block; height: 24px; }
 
-header h1 img {
-  display: block;
-  width: 124px;
-}
+/* NAVIGATION */
+nav .list { gap: 24px; }
 
-/* =========================
-  NAV
+/* NAV */
 
-header nav {
-  display: flex;
-  align-items: center;
-  gap: 56px;
-}
+nav a:hover { color: var(--white); }
 
-header nav ul {
-  display: flex;
-  gap: 32px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+/* CTA BUTTON */
+header .btn { height: 40px; box-shadow: var(--button-shadow); transition: 0.2s ease; }
 
-header .nav-item a {
-  font: var(--caption-m);
-  color: var(--white);
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-header .nav-item a:hover {
-  color: var(--white-alpha-70);
-}
-
-/* =========================
-  CTA BUTTON
+/* CTA BUTTON */
 
 header .cta-btn-sub {
   padding: 12px 24px;
@@ -116,7 +83,6 @@ header .cta-btn-sub:active {
     font: var(--body-m-plus-400);
     border-radius: 50px;
     width: fit-content;
-    margin-bottom: -22px; 
 }
 
 .hero-title {
@@ -173,32 +139,70 @@ header .cta-btn-sub:active {
 }
 
 /* 아이콘 폰트 스타일 추가 */
-.material-icons {
+.hero-section .btn-sub span.material-icons {
+    background: transparent;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    color: var(--title-black);
     font-family: 'Material Icons';
     font-size: var(--font-size-24);
     line-height: var(--line-height-32);
     display: inline-block;
 }
 
-/* 6. 이미지 박스 */
 .image-box {
     width: 520px;
     min-width: 520px;
     height: 450px;
-    position: relative;
+    position: relative; /* ★ 자식들이 이 안에서 움직이게 기준점 설정 */
     border-radius: var(--radius-l);
-    border: 1px solid var(--neutral-medium-gray); 
     box-sizing: border-box;
-    background: var(--ui-glass-effect); 
     box-shadow: var(--shadow-default);
-    overflow: visible; 
     flex-shrink: 0;
+    overflow: visible; /* 통계 카드가 삐져나와야 하므로 유지 */
 }
+
+/* 2. 이미지 (유리보다 아래에 배치) */
 .image-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: calc(var(--radius-l) - 1px);
+    display: block;
+    
+    /* ★ 유리가 위에 올라올 수 있게 레이어 순서 낮춤 */
+    position: relative;
+    z-index: 1; 
+}
+
+/* 3. ★ 유리 속성 튀어나오게 하기 (사진 위로 얹기) */
+.image-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* ★ 사진보다 위에 오도록 z-index 설정 */
+    z-index: 2; 
+    
+    /* 배경 라운드 값과 일치 */
+    border-radius: var(--radius-l);
+    
+    /* ★ 피그마 Linear 70% 반영 그라데이션 (Overlay) */
+    background: var(--glass-effect);
+    
+    /* 뒤 배경 블러 효과 (사진을 유리판처럼 흐릿하게 만듦) */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    
+    /* 유리 질감을 더해주는 은은한 테두리 */
+    border: 1px solid var(--medium-gray);
+    pointer-events: none; 
 }
 
 /* 7. 통계 카드 */
@@ -231,7 +235,8 @@ header .cta-btn-sub:active {
 }
 
 .card-icon .material-icons {
-    font-size: 32px; /* 카드 내 아이콘은 크게 */
+    font-size: 32px;
+    line-height: var(--line-height-full); /* 카드 내 아이콘은 크게 */
 }
 
 /* 8. 카드 내부 텍스트 정렬 */
@@ -249,6 +254,7 @@ header .cta-btn-sub:active {
     font-size: var(--font-size-36);
     line-height: var(--line-height-32);
     color: var(--near-black);
+    font-weight: bold;
 }
 
 .card-text span {
@@ -256,6 +262,10 @@ header .cta-btn-sub:active {
     color: var(--main-black);
 }
 /* 전환 보조 자료 그룹 스타일 - 배정호 */
+header .btn:active { background: var(--primary-active); }
+
+/* =======================
+전환 보조 자료 그룹 스타일 - 배정호
 
 .conversion-support-group > section {
   display: flex;
@@ -273,10 +283,10 @@ header .cta-btn-sub:active {
   text-align: center;
 }
 .testimonial-section .section-header h2 {
-  font:var(--heading-l)
+  font: var(--heading-l);
 }
 .testimonial-section .section-header p {
-  font:var(--heading-s)
+  font: var(--heading-s);
 }
 
 .testimonial-section .testimonial-list {
@@ -288,31 +298,14 @@ header .cta-btn-sub:active {
   flex: 1 1 0;
 }
 
+/* =======================
+전환 보조 자료 그룹 종료 
+======================= */
 
+/* =======================
+footer css작성 - 이민호 작성
+======================= */
 
-
-/* 고정 버튼 스타일 - 배정호 작업 */
-
-.fixed-text {
-  color: var(--white);
-}
-
-.contact-us-button {
-  background: var(--secondary);
-}
-
-.contact-us-button a {
-  font-size: 48px;
-}
-
-.top-button {
-  background: var(--button-container);
-}
-
-.top-button a {
-  font-size: 96px;
-}
-/* footer css작성 - 이민호 작성 */
 footer {
   width: 100%;
   background: var(--super-light-gray);
@@ -330,9 +323,7 @@ footer .container {
   margin: 0 auto;
 }
 
-/* =========================
-  FOOTER TOP
-========================= */
+/* FOOTER TOP */
 
 .footer-top {
   display: flex;
@@ -341,9 +332,7 @@ footer .container {
   gap: 80px;
 }
 
-/* =========================
-  BRAND
-========================= */
+/* BRAND */
 
 .footer-brand {
   display: flex;
@@ -390,8 +379,7 @@ footer .container {
   color: var(--primary);
 }
 
-/* =========================
-  NAV
+/* NAV */
 
 .footer-nav-program,
 .footer-nav-company,
@@ -445,8 +433,7 @@ footer .container {
   color: var(--dark-gray);
 }
 
-/* =========================
-  LINE
+/* LINE */
 
 footer hr {
   width: 100%;
@@ -456,8 +443,7 @@ footer hr {
   margin: 56px 0 32px;
 }
 
-/* =========================
-  FOOTER BOTTOM
+/* FOOTER BOTTOM */
 
 .footer-bottom {
   display: flex;
@@ -483,7 +469,44 @@ footer hr {
 
 .footer-bottom a:hover {
   color: var(--primary);
+}
+
 /* 임시 크기 조정 */
 img {
   max-width: 400px;
 }
+/* =======================
+푸터 종료
+======================= */
+
+/* =======================
+hero-section 최예빈 작업
+======================= */
+
+/* =======================
+고정 버튼 스타일 - 배정호 작업
+======================= */
+
+.fixed-text {
+  color: var(--white);
+}
+
+.contact-us-button {
+  background: var(--secondary);
+}
+
+.contact-us-button a {
+  font-size: 48px;
+}
+
+.top-button {
+  background: var(--button-container);
+}
+
+.top-button a {
+  font-size: 48px;
+}
+
+/* =======================
+고정 버튼 종료
+======================= */

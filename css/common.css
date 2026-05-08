@@ -44,7 +44,9 @@
   font-style: normal;
 }
 
-/* 전체 레이아웃 스타일 */
+/* =======================
+전체 레이아웃 스타일
+======================= */
 
 /* 전체 flex - 배정호 */
 
@@ -68,14 +70,10 @@ section {
   max-width: 1200px;
 }
 
-/* 전체 스타일 */
-
 /* top 이동시 스크롤 부드럽게 - 배정호 */
 html {
   scroll-behavior: smooth;
 }
-
-/* main 공통 스타일 */
 
 /* 섹션그룹 간 갭/패딩 - 배정호 */
 
@@ -86,9 +84,11 @@ html {
   padding: 96px 0;
 }
 
-/* 공통 클래스 */
+/* =======================
+공통 유틸리티 클래스
+======================= */
 
-/* vertical, horizontal 클래스 추가 - 배정호 */
+/* flex utility 추가 (vertical, horizontal, jcc, jcsb, acc) - 배정호 */
 
 .vertical {
   display: flex;
@@ -100,12 +100,22 @@ html {
   flex-direction: row;
 }
 
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+
 /* ellipsis : 텍스트가 크기 넘어가면 '...'으로 표시 - 배정호 */
 
 .ellipsis {
   overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  white-space: nowrap; /* 줄바꿈 금지 */
+  text-overflow: ellipsis; /* ... 표시 */
 }
 
 /* visually-hidden 클래스 추가 - 배정호 */
@@ -196,4 +206,68 @@ html {
 }
 .label-m-500 {
   font: var(--label-m-500);
+}
+
+/* Color 유틸리티 클래스 - 배정호 */
+
+/* Background */
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-title-black {
+  background-color: var(--title-black);
+}
+
+.bg-main-black {
+  background-color: var(--main-black);
+}
+
+.bg-light-gray {
+  background-color: var(--light-gray);
+}
+
+.bg-super-light-gray {
+  background-color: var(--super-light-gray);
+}
+
+.bg-main-button {
+  background-color: var(--main-button);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+/* Color */
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.text-title-black {
+  color: var(--title-black);
+}
+
+.text-main-black {
+  color: var(--main-black);
+}
+
+.text-light-gray {
+  color: var(--light-gray);
+}
+
+.text-super-light-gray {
+  color: var(--super-light-gray);
+}
+
+.text-white {
+  color: var(--white);
 }
