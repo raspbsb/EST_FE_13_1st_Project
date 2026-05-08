@@ -1,82 +1,63 @@
-/* header작성 - 이민호 작성 */
-header {
-  width: 100%;
-  background: var(--secondary);
+/* headercss작성 - 이민호 */
+header { width: 100%; background: var(--secondary); }
+
+header .container { height: 64px; margin: 0 auto; align-items: center; }
+
+/* LOGO */
+.logo a { display: inline-flex; align-items: center; }
+
+.logo img { display: block; height: 24px; }
+
+/* NAVIGATION */
+header nav { margin-left: auto; }
+
+header nav .list { gap: 24px; }
+
+header nav a { display: inline-flex; align-items: center; padding: 8px 0; font: var(--caption-m); color: var(--white-alpha-70); text-decoration: none; transition: 0.2s ease; }
+
+header nav a:hover { color: var(--white); }
+
+/* CTA BUTTON */
+header .btn { height: 40px; margin-left: 40px; box-shadow: var(--button-shadow); transition: 0.2s ease; }
+
+header .btn:hover { background: var(--primary-hover); }
+
+header .btn:active { background: var(--primary-active); }
+/* header작성-완료-*/
+/* 전환 보조 자료 그룹 스타일 - 배정호 */
+
+.conversion-support-group > section {
+  display: flex;
+  flex-direction: column;
 }
 
-header .container {
-  max-width: 1200px;
-  height: 64px;
-  margin: 0 auto;
+.testimonial-section .container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  gap: 64px;
 }
 
-/* =========================
-  LOGO
-========================= */
+.testimonial-section .section-header {
+  text-align: center;
+}
+.testimonial-section .section-header h2 {
+  font: var(--heading-l);
+}
+.testimonial-section .section-header p {
+  font: var(--heading-s);
+}
 
-header h1 a {
+.testimonial-section .testimonial-list {
   display: flex;
-  align-items: center;
+  gap: 24px;
 }
 
-header h1 img {
-  display: block;
-  width: 124px;
+.testimonial-section .testimonial-item {
+  flex: 1 1 0;
 }
 
-/* =========================
-  NAV
-========================= */
-
-header nav {
-  display: flex;
-  align-items: center;
-  gap: 56px;
-}
-
-header nav ul {
-  display: flex;
-  gap: 32px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-header .nav-item a {
-  font: var(--caption-m);
-  color: var(--white);
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-header .nav-item a:hover {
-  color: var(--white-alpha-70);
-}
-
-/* =========================
-  CTA BUTTON
-========================= */
-
-header .cta-btn-sub {
-  padding: 12px 24px;
-  border-radius: var(--radius-s-plus);
-  background: var(--white);
-  font: var(--caption-m);
-  color: var(--primary);
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-header .cta-btn-sub:hover {
-  background: var(--white-hover);
-}
-
-header .cta-btn-sub:active {
-  background: var(--white-active);
-}
+/* 고정 버튼 스타일 - 배정호 작업 */
 
 .fixed-text {
   color: var(--white);
@@ -95,180 +76,48 @@ header .cta-btn-sub:active {
 }
 
 .top-button a {
-  font-size: 96px;
+  font-size: 48px;
 }
 /* footer css작성 - 이민호 작성 */
-footer {
-  width: 100%;
-  background: var(--super-light-gray);
-  padding: 64px 0 40px;
+footer { width: 100%; background: var(--super-light-gray); }
+
+footer .container { padding: 64px 0 40px; gap: 48px; }
+
+footer > .container > .box.horizontal { justify-content: space-between; align-items: flex-start; }
+
+footer .brand { width: 260px; gap: 16px; }
+
+footer .box.vertical { gap: 16px; }
+
+footer hr { width: 100%; border: none; border-top: 1px solid var(--gray); }
+
+footer hr + .box { justify-content: space-between; align-items: center; }
+
+footer .logo { align-items: center; gap: 6px; }
+
+footer .logo .material-icons { font-size: 18px; color: var(--primary); }
+
+footer .logo h2, footer h3 { font: var(--caption-m); color: var(--near-black); }
+
+footer .brand p, footer .list a, footer hr + .box p {
+  font: var(--caption-s); color: var(--main-black);
 }
 
-/* 공통 */
+footer .list { gap: 12px; }
 
-footer a {
-  text-decoration: none;
-}
+footer hr + .box .list { gap: 24px; }
 
-footer .container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+footer .list a { text-decoration: none; transition: 0.2s ease; }
 
-/* =========================
-  FOOTER TOP
-========================= */
+footer .list a:hover { color: var(--primary); }
 
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 80px;
-}
+footer .icons, footer li.horizontal { gap: 8px; align-items: center; }
 
-/* =========================
-  BRAND
-========================= */
+footer .material-icons { color: var(--medium-gray); }
 
-.footer-brand {
-  display: flex;
-  flex-direction: column;
-  width: 240px;
-  gap: 24px;
-}
-
-.footer-brand .logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.footer-brand .logo .material-icons {
-  font-size: 18px;
-  color: var(--primary);
-}
-
-.footer-brand .logo h2 {
-  font: var(--label-m-700);
-  color: var(--title-black);
-}
-
-.footer-brand p {
-  font: var(--caption-m);
-  color: var(--main-black);
-  line-height: 1.8;
-}
-
-.footer-brand .icons {
-  display: flex;
-  gap: 12px;
-}
-
-.footer-brand .icons .material-icons {
-  font-size: 18px;
-  color: var(--dark-gray);
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.footer-brand .icons .material-icons:hover {
-  color: var(--primary);
-}
-
-/* =========================
-  NAV
-========================= */
-
-.footer-nav-program,
-.footer-nav-company,
-.footer-nav-follow-us {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.footer-nav-program h3,
-.footer-nav-company h3,
-.footer-nav-follow-us h3 {
-  font: var(--caption-m);
-  font-weight: var(--weight-bold);
-  text-transform: capitalize;
-  color: var(--title-black);
-}
-
-.footer-nav-program .vertical,
-.footer-nav-company .vertical,
-.footer-nav-follow-us .vertical {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.footer-nav-program a,
-.footer-nav-company a,
-.footer-nav-follow-us a {
-  font: var(--caption-m);
-  color: var(--main-black);
-  transition: 0.3s;
-}
-
-.footer-nav-program a:hover,
-.footer-nav-company a:hover,
-.footer-nav-follow-us a:hover {
-  color: var(--primary);
-}
-
-/* follow us 아이콘 */
-
-.footer-nav-follow-us .horizontal {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.footer-nav-follow-us .material-icons {
-  font-size: 16px;
-  color: var(--dark-gray);
-}
-
-/* =========================
-  LINE
-========================= */
-
-footer hr {
-  width: 100%;
-  height: 1px;
-  border: none;
-  background: var(--gray);
-  margin: 56px 0 32px;
-}
-
-/* =========================
-  FOOTER BOTTOM
-========================= */
-
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-bottom p {
-  font: var(--caption-s);
-  color: var(--medium-gray);
-}
-
-.footer-bottom .vertical {
-  display: flex;
-  gap: 32px;
-}
-
-.footer-bottom a {
-  font: var(--caption-s);
-  color: var(--medium-gray);
-  transition: 0.3s;
-}
-
-.footer-bottom a:hover {
-  color: var(--primary);
-}
+footer li.horizontal .material-icons { font-size: 14px; }
+/* footer css작성 -완료- */
+/* 임시 크기 조정 */
+img {
+  max-width: 400px;
+} /* hero-section 최예빈 작업 */
