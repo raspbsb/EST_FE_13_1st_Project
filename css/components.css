@@ -162,13 +162,6 @@ header nav ul {
   gap: 24px; /* 메뉴 아이템 간의 간격 */
 }
 
-/*  네비폰트 흰색 -> 가상배경설정 */
-.container {
-  background-color: var(--secondary);
-  width: 1920px;
-  height: 96px;
-}
-
 .nav-item a {
   display: flex;
   align-items: center;
