@@ -376,27 +376,27 @@ header .btn:active { background: var(--primary-active); }
     transition: background 0.1s ease;
 }
 
-/* 메인 버튼 (흰색) */
 .cta-btn-main {
     background-color: var(--white);
     color: var(--primary);
 }
-
-/* 서브 버튼 (세컨더리) */
+.cta-btn-main:hover {
+    background-color: var(--white-hover);
+}
+.cta-btn-main:active {
+    background-color: var(--white-active);
+}
 .btn-sub {
     background-color: var(--secondary);
     color: var(--white);
 }
-
-/* 마우스 올렸을 때 (Hover) */
-.final-cta-buttons a:hover {
-    background: var(--button-container-hover);
+.btn-sub:hover {
+    background-color: var(--secondary-hover);
+}
+.btn-sub:active {
+    background-color: var(--secondary-active);
 }
 
-/* 클릭했을 때 (Active) */
-.final-cta-buttons a:active {
-    background: var(--button-container-active);
-}
 
 /* 최종 CTA css - 최예빈작성 끝 */
 
