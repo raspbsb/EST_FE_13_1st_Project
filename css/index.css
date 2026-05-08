@@ -75,7 +75,186 @@ header .cta-btn-sub:active {
   background: var(--white-active);
 }
 
+/* hero 그룹 스타일 - 최예빈 */
+/* 1. 기본 레이아웃 클래스 */
+.horizontal { display: flex; flex-direction: row; }
+.vertical { display: flex; flex-direction: column; }
 
+/* 2. 히어로 섹션 전체 설정 */
+.hero-section {
+    width: 100%;
+    background-color: var(--white); 
+    /* ★ 헤더 밑으로 내리기: 상단 패딩을 160px~180px 정도로 넉넉히 줍니다 */
+    padding: 180px 0 100px 0; 
+    overflow: visible; 
+}
+
+.hero-container.horizontal {
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 78px;
+}
+
+/* 4. 왼쪽 텍스트 박스 */
+.hero-content-box.vertical {
+    width: 553px;
+    gap: 32px;
+    position: relative;
+    z-index: 10;
+}
+
+/* 뱃지 스타일 */
+.hero-content-box span:first-child {
+    display: inline-flex;
+    align-items: center;
+    height: 32px;
+    padding: 0 16px;
+    background-color: var(--primary-alpha-10);
+    color: var(--primary);
+    font: var(--body-m-plus-400);
+    border-radius: 50px;
+    width: fit-content;
+    margin-bottom: -22px; 
+}
+
+.hero-title {
+    width: 553px;
+    font: var(--display-500);
+    color: var(--title-black);
+    margin: 0;
+}
+
+.hero-subtitle {
+    font: var(--heading-m);
+    color: var(--main-black);
+}
+
+.hero-description {
+    font: var(--lead-m);
+    color: var(--main-black);
+}
+
+.point-color {
+    color: var(--primary);
+    font-style: normal;
+}
+
+/* 5. 버튼 그룹 */
+.hero-cta-buttons.horizontal {
+    align-items: center;
+    gap: 12px;
+    margin-top: 0;
+}
+
+.cta-btn-main {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 10px 32px;
+    border-radius: var(--radius-s-plus);
+    font: var(--label-l);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-sub {
+    background: var(--main-button);
+    color: var(--title-black);
+    padding: 10px 32px;
+    border-radius: var(--radius-s-plus);
+    font: var(--label-l);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* 아이콘 폰트 스타일 추가 */
+.material-icons {
+    font-family: 'Material Icons';
+    font-size: var(--font-size-24);
+    line-height: var(--line-height-32);
+    display: inline-block;
+}
+
+/* 6. 이미지 박스 */
+.image-box {
+    width: 520px;
+    min-width: 520px;
+    height: 450px;
+    position: relative;
+    border-radius: var(--radius-l);
+    border: 1px solid var(--neutral-medium-gray); 
+    box-sizing: border-box;
+    background: var(--ui-glass-effect); 
+    box-shadow: var(--shadow-default);
+    overflow: visible; 
+    flex-shrink: 0;
+}
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: calc(var(--radius-l) - 1px);
+}
+
+/* 7. 통계 카드 */
+.hero-stats-card {
+    position: absolute;
+    left: -44px; /* 이미지 밖으로 튀어나오는 위치 */
+    bottom: -20px;
+    background-color: var(--white-alpha-60);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--white-alpha-20);
+    box-shadow: var(--shadow-elevated);
+    padding: 24px;
+    border-radius: var(--radius-m);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    z-index: 20;
+}
+
+.card-icon {
+    width: 64px; 
+    height: 64px;
+    background-color: var(--secondary);
+    border-radius: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
+
+.card-icon .material-icons {
+    font-size: 32px; /* 카드 내 아이콘은 크게 */
+}
+
+/* 8. 카드 내부 텍스트 정렬 */
+.card-text.vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;  
+    justify-content: center; 
+}
+
+.card-text strong {
+    display: block;
+    font-family: var(--font-gmarket); 
+    font-size: var(--font-size-36);
+    line-height: var(--line-height-32);
+    color: var(--near-black);
+}
+
+.card-text span {
+    font: var(--heading-x-x-s);
+    color: var(--main-black);
+}
 /* 전환 보조 자료 그룹 스타일 - 배정호 */
 
 .conversion-support-group > section {
