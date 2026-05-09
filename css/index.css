@@ -529,20 +529,7 @@ hero-section 최예빈 작업
   transition: 0.3s ease;
 }
 
-/* hover만 색상 추가 변경 */
 
-.final-cta-button-normal {
-  background-color: var(--secondary);
-  color: var(--white);
-}
-
-.final-cta-button-normal:hover {
-  background: var(--secondary-hover);
-}
-
-.final-cta-button-normal:active {
-  background: var(--secondary-active);
-}
 
 /* =======================
 최종 CTA 섹션 종료 */

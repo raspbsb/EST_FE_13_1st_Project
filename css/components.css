@@ -19,6 +19,7 @@ button compnents - 이민호 작성
 
 .btn-md {
   padding: 10px 20px;
+  box-sizing: border-box;
   border-radius: var(--radius-s-plus);
   font: var(--label-l);
 }
