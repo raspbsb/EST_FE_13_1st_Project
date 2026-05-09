@@ -5,10 +5,6 @@ button compnents - 이민호 작성
 버튼 컴포넌트 - 배정호 수정
 ======================= */
 
-/* =======================
-Button Base Component 
-======================= */
-
 .btn { display: inline-flex; align-items: center; justify-content: center; border: none; text-decoration: none; cursor: pointer; transition: 0.2s ease; }
 
 /* 크기/모양 */
@@ -33,15 +29,13 @@ Button Base Component
 
 .btn-sub:active { background: var(--white-active); }
 
-.btn-ghost { background: var(--gray-100); color: var(--gray-700); }
+.btn-ghost { background: var(--light-gray); color: var(--dark-gray); }
 
-.btn-ghost:hover { background: var(--gray-200); }
+.btn-ghost:hover { background: var(--gray); }
 
-.btn-ghost:active { background: var(--gray-300); }
+.btn-ghost:active { background: var(--medium-gray); }
 
-/* =======================
-버튼 컴포넌트 종료
-======================= */
+/* 버튼 컴포넌트 종료 */
 
 /* #endregion */
 
