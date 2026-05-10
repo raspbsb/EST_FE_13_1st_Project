@@ -732,6 +732,13 @@ Footer 종료
   display: flex;
   flex-direction: row;
 }
+
+.programs-section-group{
+  background: var(--white);
+  margin-top: 96px;
+  margin-bottom: 96px;
+  gap: 96px;
+}
 .programs-section-group .program-section {
   align-items: center;
   gap: 32px;
@@ -925,12 +932,35 @@ Footer 종료
   gap: var(--line-height-27);
   box-sizing: border-box;
 }
-
+.icon-vertical-card-tag-blue {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 282px;
+  height: 320px;
+  border: 2px solid var(--secondary-alpha-30);
+  border-radius: 24px;
+  background: var(--bright-blue);
+  padding: 32px;
+  gap: var(--line-height-27);
+  box-sizing: border-box;
+}
 .icon-box-small {
   width: 48px;
   height: 48px;
   color: var(--primary);
   background: var(--secondary-alpha-10);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-vertical-card-tag-blue .icon-box-small-blue {
+  width: 48px;
+  height: 48px;
+  color: var(--white);
+  background: var(--white-alpha-20);
   border-radius: 16px;
   display: flex;
   align-items: center;
@@ -943,12 +973,29 @@ Footer 종료
   justify-content: center;
   gap: 8px;
 }
+.icon-vertical-card-tag-blue .text-group-blue {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+.icon-vertical-card-tag-blue .text-group-blue h3{
+  color: var(--white);
+}
+.icon-vertical-card-tag-blue .text-group-blue p{
+  color: var(--white-alpha-70);
+}
 
 .icon-box-small .material-icons {
   font-size: 24px;
 }
 
 .icon-vertical-card-tag .list-group ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.icon-vertical-card-tag-blue .list-group-blue ul {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -960,6 +1007,16 @@ Footer 종료
   border-radius: 4px;
   font: var(--caption-s);
   color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-vertical-card-tag-blue .list-group-blue li {
+  padding: 0 8px;
+  background: var(--main-button-alpha-50);
+  border-radius: 4px;
+  font: var(--caption-s);
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -992,3 +1049,17 @@ Footer 종료
   align-items: center;
   font: var(--caption-m);
 }
+.icon-vertical-card .list-status-black ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: var(--caption-m);
+}
+
+.icon-vertical-card .list-status ul li:nth-child(2){
+color: var(--primary);
+}
+.icon-vertical-card .list-status-black ul li:nth-child(2){
+color: var(--main-black);
+}
+/* 프로그램 그룹 끝 - 오예은 작업 */
