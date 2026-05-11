@@ -64,13 +64,13 @@ header .btn-sub {
 }
 
 header .btn-sub:hover {
-  background: var(--main-hover);
-  color: var(--title-black);
+  background: var(--white-hover);
+  color: var(--primary);
 }
 
 header .btn-sub:active {
-  background: var(--main-active);
-  color: var(--title-black);
+  background: var(--white-active);
+  color: var(--primary);
 }
 
 /* header 종료 */
