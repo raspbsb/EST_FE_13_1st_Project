@@ -29,7 +29,7 @@
 
         <nav>
           <ul class="list horizontal">
-            <li><a href="#">과정소개</a></li>
+            <li><a href="#" class="intro">과정소개</a></li>
             <li><a href="#">커리큘럼</a></li>
             <li><a href="#">수강후기</a></li>
             <li><a href="#">신청안내</a></li>
@@ -84,65 +84,86 @@
       <!-- Hero Section 종료 -->
 
       <!-- Trust Group - 김해나 작업 -->
-      <section class="trust-group section-group">
-        <div>
-          <h2>숫자로 증명하는 결과</h2>
-          <p>수강생 경험과 성과를 수치로 확인해보세요</p>
-          <div>
-            <ul>
-              <li>
-                누적 수강생
-                <strong>5,000+</strong>
-              </li>
-              <li>
-                수료율
-                <strong>92%</strong>
-              </li>
-              <li>
-                수료 후 취업률
-                <strong>95.4%</strong>
-              </li>
-              <li>
-                수료생 만족도
-                <strong>4.8 / 5.0</strong>
-              </li>
-            </ul>
+      <section class="trust-section section-group vertical bg-light-gray">
+        <!-- Numerical  Data Section -->
+        <section class="numerical-data-section vertical">
+          <div class="text-group container vertical">
+            <h2 class="heading-l">숫자로 증명하는 결과</h2>
+            <p class="heading-s text-main-black">수강생 경험과 성과를 수치로 확인해보세요</p>
+            <div class="data-box horizontal">
+              <ul class="data-list">
+                <li class="heading-s text-main-black">
+                  누적 수강생
+                  <strong class="heading-m text-title-black">5,000+</strong>
+                </li>
+                <li class="heading-s text-main-black">
+                  수료율
+                  <strong class="heading-m text-title-black">92%</strong>
+                </li>
+                <li class="heading-s text-main-black">
+                  수료 후 취업률
+                  <strong class="heading-m text-title-black">95.4%</strong>
+                </li>
+                <li class="heading-s text-main-black">
+                  수료생 만족도
+                  <strong class="heading-m text-title-black">4.8 / 5.0</strong>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
+        </section>
 
-        <hr />
-
-        <div>
-          <h2>왜 이스트캠프인가요?</h2>
-          <p>단순 코딩을 넘어 성장을 지원하는 핵심 가치</p>
-          <div>
-            <span class="material-icons"> groups </span>
-            <h4>실전 팀 프로젝트</h4>
-            <p>기획부터 배포까지, 현업과 동일한 스택으로 실제 서비스를 구축하며 팀워크를 배웁니다.</p>
-          </div>
-          <div>
-            <h4>최신 기술 스택</h4>
-            <p>React, Next.js, Spring Boot 등 트렌디한 스택 적용.</p>
-          </div>
-          <div>
-            <h4>취업 연계 프로그램</h4>
-            <p>국내 유수의 IT 기업과의 채용 매칭 시스템 제공.</p>
-          </div>
-          <div>
-            <!-- <img src="#" alt="" /> 이미지 아니에요 -->
-            <h4>1:1 커리어 멘토링</h4>
-            <p>현업 7년차 이상의 시니어 개발자들이 이력서 피드백부터 모의 면접까지 밀착 케어합니다.</p>
-          </div>
-        </div>
-
-        <hr />
-
-        <section class="employment-status-section">
+        <hr class="divider" />
+        <!-- 차별화 요소 섹션 -->
+        <section class="differentiator-section vertical">
           <div class="text-group">
-            <h2>수료생 주요 취업 현황</h2>
-            <p>실무 역량을 입증한 많은 수료생들이 IT업계에서 활약하고 있습니다.</p>
+            <h2 class="heading-l">왜 이스트캠프인가요?</h2>
+            <p class="heading-s text-main-black">단순 코딩을 넘어 성장을 지원하는 핵심 가치</p>
           </div>
-          <div class="container vertical">
+          <div class="container horizontal gap-m card-tall">
+            <div class="card-grid outer-card-box box vertical gap-m grow-2">
+              <article class="horizontal-card-item box horizontal card grow-1 align-center">
+                <span class="material-icons card-icon">group</span>
+                <div class="text-box box vertical gap-s">
+                  <h3>실전 팀 프로젝트</h3>
+                  <p class="body-m-plus-400">
+                    기획부터 배포까지, 현업과 동일한 스택으로 실제 서비스를 구축하며 팀워크를 배웁니다.
+                  </p>
+                </div>
+              </article>
+              <div class="inner-card-box box horizontal gap-m grow-1">
+                <article class="card-item box vertical card grow-1 gap-s">
+                  <h3 class="heading-m">최신 기술 스택</h3>
+                  <p class="body-m-plus-400">React, Next.js, Spring Boot 등 트렌디한 스택 적용.</p>
+                </article>
+                <article class="card-item box vertical card grow-1 gap-s">
+                  <h3 class="heading-m">취업 연계 프로그램</h3>
+                  <p class="body-m-plus-400">국내 유수의 IT 기업과의 채용 매칭 시스템 제공.</p>
+                </article>
+              </div>
+            </div>
+            <article class="vertical-card-item box vertical card grow-1 justify-between bg-primary">
+              <div class="icon-box box horizontal justify-end">
+                <span class="material-icons card-icon-big">workspace_premium</span>
+              </div>
+              <div class="text-box box vertical gap-xs">
+                <h3 class="heading-m text-white">1:1 커리어 멘토링</h3>
+                <p class="body-m-plus-400">
+                  현업 7년차 이상의 시니어 개발자들이 이력서 피드백부터 모의 면접까지 밀착 케어합니다.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <hr class="divider" />
+        <!-- 수료생 주요 취업 현황 -->
+        <section class="employment-status-section vertical">
+          <div class="text-group">
+            <h2 class="heading-l">수료생 주요 취업 현황</h2>
+            <p class="heading-s text-main-black">실무 역량을 입증한 많은 수료생들이 IT업계에서 활약하고 있습니다.</p>
+          </div>
+          <div class="container vertical logo-box">
             <div class="employment-status-column horizontal">
               <img src="images/est-logo.png" alt="est 로고" />
               <img src="images/inbody-logo.png" alt="Inbody 로고" />
@@ -160,7 +181,6 @@
         </section>
       </section>
       <!-- 프로그램 그룹 - 오예은 작업 -->
-      <hr />
       <section class="programs-section-group">
         <div class="container">
           <section class="program-section vertical">
@@ -174,22 +194,19 @@
               <!-- 카드 1 (article 사용) -->
               <article class="image-card-big-item">
                 <div class="image-frame-box">
-                  <img src="./images/FE-Dev-Track-Img.png" alt="프론트엔드 과정 이미지">
+                  <img src="./images/FE-Dev-Track-Img.png" alt="프론트엔드 과정 이미지" />
                 </div>
                 <div class="content-box vertical">
                   <div class="text-group-box vertical">
                     <div class="program-information-box vertical">
-
                       <span class="badge-item">Web Development</span>
 
-                      <h3 class="program-title-item">
-                        프론트엔드 개발 14기
-                      </h3>
+                      <h3 class="program-title-item">프론트엔드 개발 14기</h3>
 
                       <div class="clip-overtext-box">
                         <p class="text-wrapper-item">
-                          독보적인 경쟁력을 가진 실무 기반 포트폴리오 완성! 수료와 동시에 현업 투입 120%
-                          가능한 준비된 인재로 거듭나세요.
+                          독보적인 경쟁력을 가진 실무 기반 포트폴리오 완성! 수료와 동시에 현업 투입 120% 가능한 준비된
+                          인재로 거듭나세요.
                         </p>
                       </div>
                     </div>
@@ -207,22 +224,18 @@
                     </ul>
                   </div>
 
-                  <a href="/program-detail" class="cta-button-main-item">
-                    과정 자세히 보기
-                  </a>
-
+                  <a href="/program-detail" class="cta-button-main-item"> 과정 자세히 보기 </a>
                 </div>
               </article>
 
               <!-- 카드 2 -->
               <article class="image-card-big-item">
                 <div class="image-frame-box">
-                  <img src="./images/FE-Dev-Track-Img_1.png" alt="프론트엔드 과정 이미지">
+                  <img src="./images/FE-Dev-Track-Img_1.png" alt="프론트엔드 과정 이미지" />
                 </div>
                 <div class="content-box vertical">
                   <div class="text-group-box vertical">
                     <div class="program-information-box vertical">
-
                       <span class="badge-item">Artificial Intelligence</span>
 
                       <h3 class="program-title-item">
@@ -249,18 +262,14 @@
                     </ul>
                   </div>
 
-                  <a href="/program-detail" class="cta-button-main-item">
-                    과정 자세히 보기
-                  </a>
-
+                  <a href="/program-detail" class="cta-button-main-item"> 과정 자세히 보기 </a>
                 </div>
               </article>
-
             </div>
-          </section class="programs-intro">
+          </section>
         </div>
 
-        <hr class="container" />
+        <hr class="divider" />
 
         <div class="container">
           <section class="program-section vertical">
@@ -296,8 +305,9 @@
                 </div>
                 <div class="text-group">
                   <h3>가디언즈 인프라보안 12기</h3>
-                  <p class="description">전현직 인프라 보안 실무자가 설계한 ‘진짜 현업 과정’으로 실무에 바로 쓰는 보안
-                    역량을 계발합니다.</p>
+                  <p class="description">
+                    전현직 인프라 보안 실무자가 설계한 ‘진짜 현업 과정’으로 실무에 바로 쓰는 보안 역량을 계발합니다.
+                  </p>
                 </div>
                 <div class="list-status">
                   <ul>
@@ -314,7 +324,9 @@
                 </div>
                 <div class="text-group">
                   <h3>가디언즈 AI 퀀트 4기</h3>
-                  <p class="description">이제는 "진짜 시장" 데이터 분석해봅시다. 이스트소프트가 만든 실전 중심 금융 AI 과정</p>
+                  <p class="description">
+                    이제는 "진짜 시장" 데이터 분석해봅시다. 이스트소프트가 만든 실전 중심 금융 AI 과정
+                  </p>
                 </div>
                 <div class="list-status-black">
                   <ul>
@@ -323,7 +335,6 @@
                   </ul>
                 </div>
               </article>
-
             </div>
 
             <!-- 4. 하단 전체보기 버튼 -->
@@ -333,16 +344,14 @@
           </section>
         </div>
 
-        <hr class="container" />
+        <hr class="divider" />
 
         <div class="container">
           <section class="program-section vertical">
             <!-- 1. 제목 및 설명 -->
             <div class="section-header-box vertical">
               <h2 class="section-title-item">4단계 성장 커리큘럼</h2>
-              <p class="section-description-item">
-                기초부터 취업까지, 각 단계마다 전문가의 밀착 케어를 제공합니다.
-              </p>
+              <p class="section-description-item">기초부터 취업까지, 각 단계마다 전문가의 밀착 케어를 제공합니다.</p>
             </div>
 
             <!-- 2. 커리큘럼 리스트 -->
@@ -354,9 +363,7 @@
                 </div>
                 <div class="text-group">
                   <h3>01. 기초 다지기</h3>
-                  <p class="description">
-                    프로그래밍의 기본 원리와 언어⋅문법을 탄탄하게 학습합니다.
-                  </p>
+                  <p class="description">프로그래밍의 기본 원리와 언어⋅문법을 탄탄하게 학습합니다.</p>
                 </div>
                 <div class="list-group">
                   <ul>
@@ -374,9 +381,7 @@
                 </div>
                 <div class="text-group">
                   <h3>02. 심화 학습</h3>
-                  <p class="description">
-                    프레임워크와 아키텍처를 이해하고 실무 라이브러리를 활용합니다.
-                  </p>
+                  <p class="description">프레임워크와 아키텍처를 이해하고 실무 라이브러리를 활용합니다.</p>
                 </div>
                 <div class="list-group">
                   <ul>
@@ -394,9 +399,7 @@
                 </div>
                 <div class="text-group">
                   <h3>03. 프로젝트</h3>
-                  <p class="description">
-                    팀 단위 협업 프로젝트를 통해 실무 프로세스를 경험합니다.
-                  </p>
+                  <p class="description">팀 단위 협업 프로젝트를 통해 실무 프로세스를 경험합니다.</p>
                 </div>
                 <div class="list-group">
                   <ul>
@@ -414,9 +417,7 @@
                 </div>
                 <div class="text-group-blue">
                   <h3>04. 취업 지원</h3>
-                  <p class="description">
-                    포트폴리오 완성 및 모의 면접을 통해 커리어를 완성합니다.
-                  </p>
+                  <p class="description">포트폴리오 완성 및 모의 면접을 통해 커리어를 완성합니다.</p>
                 </div>
                 <div class="list-group-blue">
                   <ul>
@@ -426,12 +427,10 @@
                   </ul>
                 </div>
               </div>
-
             </div>
           </section>
         </div>
       </section>
-      <hr />
 
       <!-- Conversion Support Group - 배정호 작업 -->
       <section class="conversion-support-group section-group vertical bg-super-light-gray">
@@ -547,13 +546,13 @@
         </section>
 
         <!-- 후기 섹션 종료 -->
-        <hr class="container" />
+        <hr class="divider" />
         <!-- 지원자격 섹션 -->
 
         <section class="requirements-section">
           <div class="container horizontal justify-between">
             <!-- 지원자격 섹션 텍스트 박스 -->
-            <div class="requirements-intro box vertical gap-l grow-1">
+            <div class="requirements-intro box vertical gap-l">
               <div class="section-header box vertical gap-s">
                 <h2 class="text-title-black heading-l">지원 자격</h2>
                 <p class="text-main-black body-l">
@@ -592,8 +591,8 @@
 
             <!-- 지원자격 섹션 카드 박스  -->
 
-            <div class="requirements-card-layout box vertical gap-m grow-1">
-              <div class="requirements-card-layout box horizontal gap-m">
+            <div class="requirements-card-layout box vertical gap-m">
+              <div class="requirements-card-layout box horizontal gap-m grow-1">
                 <article class="requirements-card box vertical card grow-1">
                   <h3>내일배움카드</h3>
                   <p>국민내일배움카드 발급이 가능하신 분</p>
@@ -605,13 +604,13 @@
                 </article>
               </div>
 
-              <div class="requirements-card-layout box horizontal gap-m">
+              <!-- 카드 박스 가로 -->
+
+              <div class="requirements-card-layout box horizontal gap-m grow-1">
                 <article class="requirements-card box vertical card grow-1">
                   <h3>Full-time Class</h3>
                   <p>평일 오전 9시부터 오후 6시까지 교육 참여가 가능한 분</p>
                 </article>
-
-                <!-- 카드 박스 가로 -->
 
                 <article class="requirements-card box vertical card grow-1">
                   <h3>졸업 또는 졸업예정자</h3>
@@ -628,7 +627,7 @@
         </section>
 
         <!-- 지원자격 섹션 종료 -->
-        <hr class="container" />
+        <hr class="divider" />
         <!-- FAQ / NEWS 섹션 -->
 
         <section class="faq-news-section">
@@ -894,8 +893,8 @@
             <p>최고의 IT 교육 파트너,당신의 커리어 성공을 함께합니다.</p>
 
             <div class="icons horizontal">
-              <span class="material-icons">public</span>
-              <span class="material-icons">alternate_email</span>
+              <a href="#"><span class="material-icons">public</span></a>
+              <a href="#"><span class="material-icons">alternate_email</span></a>
             </div>
           </div>
 
