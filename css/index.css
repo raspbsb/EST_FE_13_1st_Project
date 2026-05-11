@@ -34,7 +34,7 @@ nav .list {
 nav a {
   display: inline-block;
   color: var(--white-alpha-70);
-   border-bottom: 2px solid transparent;
+  border-bottom: 2px solid transparent;
   transition: 0.2s ease;
 }
 
@@ -42,7 +42,8 @@ nav a:hover {
   color: var(--white);
 }
 
-.intro:active, .intro:focus {
+.intro:active,
+.intro:focus {
   color: var(--white);
   transform: translateY(-3px);
   border-bottom: 2px solid var(--white);
@@ -546,74 +547,126 @@ footer css작성 - 이민호 작성
 ======================= */
 
 /* footer */
-footer {background:var(--super-light-gray);}
+footer {
+  width: 100%;
+  background: var(--white);
+}
 
-/* container */
-footer .container {padding:64px 0 48px;}
-
+footer .container {
+  gap: 48px;
+  padding: 80px 0 0;
+}
 /* top */
-.footer-top {justify-content:space-between; align-items:flex-start;gap:48px;}
+.footer-top {
+  justify-content: space-between;
+  align-items: flex-start;
+}
 
 /* brand */
-.footer-brand {width:264px; gap:24px;}
+.footer-brand {
+  gap: 24px;
+}
 
-/* logo */
-.footer-brand .logo {align-items:center; gap:8px;}
+.footer-brand .logo {
+  align-items: center;
+  gap: 8px;
+}
 
-.footer-brand .logo .material-icons {font-size:24px; color:var(--primary);}
+.footer-brand .logo .material-icons {
+  font-size: 32px;
+  line-height: 1;
+  color: var(--primary);
+}
 
-.footer-brand .logo h2 {font:var(--heading-x-x-s); color:var(--title-black);}
+.footer-brand .logo h2 {
+  font: var(--title-s);
+  color: var(--title-black);
+}
 
-/* text */
-.footer-brand p {font:var(--body-m-400); color:var(--dark-gray);}
+.footer-brand p {
+  max-width: 280px;
+  font: var(--body-s);
+  color: var(--main-black);
+}
 
-/* icons */
-.footer-brand .icons {gap:6px;}
+.footer-brand .icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
 
-.footer-brand .icons .material-icons {font-size:24px; color:var(--medium-gray);}
+.footer-brand .icons .material-icons {
+  font-size: 24px;
+  line-height: 1;
+  color: var(--medium-gray);
+  cursor: pointer;
+}
 
 /* nav */
-.footer-nav {width:264px; gap:24px;}
+.footer-nav {
+  gap: 24px;
+}
 
+.footer-nav h3 {
+  font: var(--label-m-700);
+  color: var(--title-black);
+}
 
-/* title */
-.footer-nav h3 {font:var(--heading-x-x-s); line-height:24px; color:var(--near-black); text-transform:capitalize;}
+.footer-nav ul {
+  gap: 16px;
+}
 
-/* list */
-footer ul {padding:0; margin:0;}
+.footer-nav li {
+  font: var(--body-s);
+  color: var(--main-black);
+}
 
-footer li {list-style: none;}
-
-.footer-nav .list {gap: 16px;}
-
-/* link */
-.footer-nav a {font:var(--body-m-400); line-height:20px; color:var(--dark-gray); text-decoration:none;}
-
-.footer-nav a:hover {color:var(--primary);}
+.footer-nav a {
+  color: inherit;
+  text-decoration: none;
+}
 
 /* follow us */
-.footer-top .footer-nav:last-child li.horizontal {align-items:center;gap:8px;}
+.follow-us li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
-.footer-top .footer-nav:last-child a {line-height:20px;}
+.follow-us .material-icons {
+  font-size: 16px;
+  line-height: 1;
+}
 
-.footer-top .footer-nav:last-child .material-icons {font-size:16px; line-height:100%; color:var(--dark-gray);}
-
-.footer-top .footer-nav:last-child li:nth-child(2) .material-icons {letter-spacing:-0.5px;}
 /* divider */
-footer hr {width:100%; height:2px; margin:48px 0; border:none; background:var(--gray);}
+footer hr {
+  width: 100%;
+  border: 0;
+  border-top: 2px solid var(--gray);
+}
 
 /* bottom */
-.footer-bottom {justify-content:space-between; align-items:center;}
+.footer-bottom {
+  justify-content: space-between;
+  align-items: center;
 
-/* copy */
-.footer-bottom p {font:var(--caption-m);color:var(--medium-gray);}
+  padding: 48px 0;
+}
 
-/* legal */
-.legal-links {gap:32px;}
+.footer-bottom p,
+.legal-links a {
+  font: var(--caption-m);
+  color: var(--medium-gray);
+}
 
-.legal-links a {font:var(--caption-m); color:var(--medium-gray); text-decoration:none;}
+.legal-links {
+  align-items: center;
+  gap: 32px;
+}
 
-.legal-links a:hover {color: var(--primary);}
+.legal-links a {
+  text-decoration: none;
+}
 /* =======================
 Footer 종료
 ======================= */
