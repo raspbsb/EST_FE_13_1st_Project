@@ -601,6 +601,7 @@ Accordion (Checkbox) - 배정호 작업
   display: flex;
   flex-direction: column;
   gap: 30px;
+  z-index: 2;
 }
 
 /* =======================
