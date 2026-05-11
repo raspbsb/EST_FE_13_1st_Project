@@ -7,67 +7,58 @@ header {
   top: 0;
   z-index: 100;
   width: 100%;
-  min-height: 96px;
+  height: 96px;
   display: flex;
   align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 100;
   background: var(--secondary);
-  overflow: hidden;
+  border-bottom: 1px solid var(--white-alpha-70);
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
 }
-
 header .header-inner {
-  height: 96px;
+  height: 52px;
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
 }
-
 .logo img {
   display: block;
   width: 180px;
   height: 24px;
 }
-
 nav .list {
   display: flex;
   align-items: center;
   gap: 24px;
 }
-
 nav a {
   display: inline-block;
-  font: var(--heading-x-s);
+  font: var(--label-m-500);
   color: var(--white-alpha-70);
-
+  text-decoration: none;
   transition: 0.2s ease;
 }
 nav .intro {
+  font: var(--label-m-700);
   color: var(--white);
   border-bottom: 3px solid var(--white);
   padding-bottom: 4px;
 }
-
 header .btn {
   height: 52px;
   transition: 0.2s ease;
 }
-
 header .btn-sub {
   padding: 10px 20px;
   border-radius: 12px;
+  gap: 10px;
   background: var(--white);
   color: var(--primary);
 }
-
 header .btn-sub:hover {
   background: var(--white-hover);
   color: var(--primary);
 }
-
 header .btn-sub:active {
   background: var(--white-active);
   color: var(--primary);
@@ -100,26 +91,23 @@ hero-section 최예빈 작업
 .hero-section {
   width: 100%;
   background-color: var(--white);
-  /* ★ 헤더 밑으로 내리기: 상단 패딩을 160px~180px 정도로 넉넉히 줍니다 */
-  padding: 180px 0 100px 0;
+  padding: 96px 0;
   overflow: visible;
-}
-
-.hero-section .hero-container.horizontal {
-  max-width: 1200px;
-  margin: 0 auto;
   align-items: center;
   justify-content: space-between;
   gap: 78px;
 }
 
 /* 4. 왼쪽 텍스트 박스 */
-.hero-section .hero-content-box.vertical {
+.hero-section .hero-content-box {
   width: 553px;
+  min-width: 553px;
+  flex-shrink: 0;
   gap: 32px;
   position: relative;
   z-index: 10;
 }
+
 
 /* 뱃지 스타일 */
 .hero-section .hero-content-box > span:first-child {
@@ -362,7 +350,6 @@ hero-section 최예빈 작업
   color: var(--main-black);
 }
 
-
 /* 대표 인기 코스 섹션 - 이미지 카드 */
 .programs-section-group .image-card-big-item {
   display: inline-flex;
@@ -541,11 +528,11 @@ hero-section 최예빈 작업
   justify-content: center;
   gap: 8px;
 }
-.programs-section-group .text-group h3{
+.programs-section-group .text-group h3 {
   font: var(--heading-s);
   color: var(--title-black);
 }
-.programs-section-group .text-group p{
+.programs-section-group .text-group p {
   font: var(--body-m);
   color: var(--main-black);
 }
@@ -555,11 +542,11 @@ hero-section 최예빈 작업
   justify-content: center;
   gap: 8px;
 }
-.programs-section-group .icon-vertical-card-tag-blue .text-group-blue h3{
+.programs-section-group .icon-vertical-card-tag-blue .text-group-blue h3 {
   font: var(--heading-s);
   color: var(--white);
 }
-.programs-section-group .icon-vertical-card-tag-blue .text-group-blue p{
+.programs-section-group .icon-vertical-card-tag-blue .text-group-blue p {
   font: var(--body-m);
   color: var(--white-alpha-70);
 }
@@ -634,11 +621,11 @@ hero-section 최예빈 작업
   font: var(--caption-m);
 }
 
-.programs-section-group .icon-vertical-card .list-status ul li:nth-child(2){
-color: var(--primary);
+.programs-section-group .icon-vertical-card .list-status ul li:nth-child(2) {
+  color: var(--primary);
 }
-.programs-section-group .icon-vertical-card .list-status-black ul li:nth-child(2){
-color: var(--main-black);
+.programs-section-group .icon-vertical-card .list-status-black ul li:nth-child(2) {
+  color: var(--main-black);
 }
 /* 프로그램 그룹 끝 - 오예은 작업 */
 
