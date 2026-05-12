@@ -473,7 +473,7 @@ hero-section 최예빈 작업
 }
 
 /* 버튼 */
-.programs-section-group .image-card-big-item .cta-button-main-item {
+/* .programs-section-group .image-card-big-item .cta-button-main-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -487,7 +487,8 @@ hero-section 최예빈 작업
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
-}
+} */
+
 /* 커리큘럼 섹션 - 아이콘 카드 */
 .programs-section-group .icon-vertical-card-tag {
   display: flex;
